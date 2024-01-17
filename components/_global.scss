@@ -13,3 +13,12 @@
   align-items: center;
   column-gap: 30px; /*noteeeeeeeeeeeeeeeeeeeeee*/
 }
+
+.button {
+  width: 25rem;
+  height: 6rem;
+  border-radius: var(--default-radius);
+  background: var(--color-raspberry-button);
+  box-shadow: 0 2rem 4rem rgba(245, 56, 56, 0.35);
+  cursor: pointer;
+}

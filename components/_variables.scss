@@ -3,7 +3,7 @@
   --gutter: 1rem;
 
   --default-padding: 15rem;
-  --default-radius: ;
+  --default-radius: 1rem;
 
   --desktop-width: 900px;
   --tablet-width: 600px;
@@ -13,6 +13,7 @@
   --color-text: #4f5665; /* Updated */
   --color-darker-blue: #0b132a; /* Updated */
   --color-raspberry-sorbet: #f53855; /* Updated */
+  --color-raspberry-button: #f53838; /* Updated */
 
   --color-background: var(--color-white); /* Updated */
   --color-box-img: var(--color-black);
@@ -21,6 +22,7 @@
   --color-footer-border: var(--color-black);
 
   --font-family-rubik: "Rubik", sans-serif;
+  --line-height-main: 3rem;
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;

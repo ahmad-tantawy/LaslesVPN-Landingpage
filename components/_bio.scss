@@ -1,18 +1,40 @@
 .bio {
-  grid-column: 1 / -1;
-
   &__data {
+    display: flex;
+    flex-direction: column;
     flex: 1;
   }
 
   &__heading {
-    color: #0b132a;
     font-size: 5rem;
     font-weight: var(--font-weight-medium);
-    line-height: 70px; /* 140% */
+    line-height: 7rem;
+    color: var(--color-darker-blue);
+
+    &--bold {
+      font-weight: var(--font-weight-bold);
+    }
   }
 
-  &__img {
+  &__objective {
+    margin: 2rem 0 5rem 0;
+
+    &--bold {
+      font-weight: var(--font-weight-medium);
+    }
+  }
+
+  &__button:hover {
+    color: var(--color-white);
+    background-color: var(--color-darker-blue);
+    box-shadow: 0 2rem 4rem rgba(11, 19, 42, 0.35);
+  }
+
+  &__imgContent {
     flex: 1;
+
+    .bio__img {
+      width: 100%;
+    }
   }
 }
