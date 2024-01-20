@@ -1,0 +1,29 @@
+.features {
+  align-items: flex-end;
+  margin-top: 9.583rem;
+
+  &__imgContent {
+    flex: 1;
+  }
+
+  &__img {
+    max-width: 50.812rem;
+    margin: 0 0 0.446rem 3.452rem;
+  }
+
+  &__data {
+    flex: 1;
+    max-width: 42.788rem;
+  }
+
+  &__objective {
+    margin: 2rem 0;
+  }
+
+  &__list > li::before {
+    content: url("../img/features-icon.svg");
+    position: relative;
+    margin-right: 1.08rem;
+    top: 0.7rem;
+  }
+}

@@ -5,6 +5,7 @@
   border-radius: var(--default-radius);
   gap: 0;
   box-shadow: 0 2rem 6rem rgb(13, 16, 37, 0.09);
+  margin-top: 10.3rem;
 
   &__columns {
     display: flex;
@@ -18,7 +19,7 @@
   }
 
   &__img {
-    margin-right: calc(3.6rem + 0.5px);
+    margin-right: 3.65rem;
   }
 
   &__data {
