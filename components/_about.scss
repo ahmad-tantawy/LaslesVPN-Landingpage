@@ -1,4 +1,4 @@
-.bio {
+.about {
   &__data {
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@
   &__imgContent {
     flex: 1;
 
-    .bio__img {
+    .about__img {
       width: 100%;
     }
   }

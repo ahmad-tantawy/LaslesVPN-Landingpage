@@ -29,16 +29,15 @@ ol {
 
 html {
   font-size: 62.5%;
-  line-height: 1.15;
   scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.6rem;
-  color: var(--color-text);
+  color: var(--color-text); // #4f5665
   font-family: var(--font-family-rubik);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-main);
+  font-weight: var(--font-weight-regular); // 400
+  line-height: var(--line-height-main); //  3rem
 }
 
 a {
