@@ -20,15 +20,72 @@
     column-gap: 5rem;
 
     .card {
+      position: relative;
       width: 33rem;
       height: 76rem;
       border: 2px solid #ddd;
       border-radius: var(--default-radius);
       background: var(--color-white);
+
+      &-image {
+        margin-top: 7.963rem;
+        width: 14.4904rem;
+        height: 16.5374rem;
+      }
+
+      &-features {
+        text-align: left;
+        margin-left: 6.991rem;
+        font-size: 1.4rem;
+      }
+
+      &-features ul > li::before {
+        content: url("../img/plan-icon.svg");
+        position: relative;
+        margin-right: 2rem;
+        top: 0.7rem;
+      }
+
+      &-bottom {
+        position: absolute;
+        width: 100%;
+        bottom: 5rem;
+
+        .bottom-price {
+          margin-bottom: 2rem;
+          color: var(--color-darker-blue);
+          font-size: var(--font-size-25);
+          font-weight: var(--font-weight-medium);
+        }
+
+        .bottom-monthly-price {
+          color: #4f5665;
+          font-weight: var(--font-weight-regular);
+        }
+      }
+
+      &--button {
+        border: 2px solid var(--color-raspberry-button);
+        border-radius: 5rem;
+        padding: 0.55rem 6.35rem;
+      }
+
+      .featured-button {
+        color: var(--color-white);
+        background-color: var(--color-raspberry-button);
+        box-shadow: 0 2rem 4rem rgba(245, 56, 56, 0.35);
+      }
+
+      &--button:hover {
+        border-color: var(--color-darker-blue);
+        color: var(--color-white);
+        background-color: var(--color-darker-blue);
+        box-shadow: 0 2rem 4rem rgba(11, 19, 42, 0.35);
+      }
     }
 
     .card:nth-child(3) {
-      border: 2px solid #f53838;
+      border: 2px solid var(--color-raspberry-button);
     }
   }
 }

@@ -30,3 +30,10 @@
   box-shadow: 0 2rem 4rem rgba(245, 56, 56, 0.35);
   cursor: pointer;
 }
+
+h3 {
+  color: var(--color-darker-blue);
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-medium);
+  margin: 3rem 0;
+}
