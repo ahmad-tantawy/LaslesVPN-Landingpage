@@ -25,12 +25,13 @@
         margin-right: 5rem;
         border: 2px solid #ddd;
         border-radius: var(--default-radius);
+        transition: var(--transition-timing);
 
         &__top {
           display: flex;
           align-items: center;
           height: 5rem;
-          border: 1px solid red;
+          // border: 1px solid red;
         }
 
         &--img {
@@ -44,19 +45,19 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: left;
           margin-right: auto;
 
           .card--name {
             color: var(--color-darker-blue);
             font-size: var(--font-size-18);
             font-weight: var(--font-weight-medium);
-            margin-top: 0.65rem;
           }
 
           .card--country {
             margin-bottom: 0.65rem;
             font-size: var(--font-size-14);
+            margin-top: -1rem;
+            margin-bottom: -0.2rem;
           }
         }
 
@@ -69,8 +70,13 @@
         }
 
         .card--discription {
-          margin-top: 2rem;
+          margin-top: 0.7rem; // question: how can i make this value 2rem without change line-height value
           color: #0b132a;
+        }
+
+        &:hover {
+          scale: 1.01;
+          border: 2px solid var(--color-raspberry-button);
         }
       }
 
@@ -83,23 +89,60 @@
   .cards-bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     margin-top: 6rem;
 
-    .button {
+    .btn {
+      display: inline-block;
       width: 60px;
       height: 60px;
       border-radius: 50%;
-      filter: drop-shadow(0px 14px 44px rgba(14, 20, 34, 0.08));
       cursor: pointer;
+      filter: drop-shadow(0px 14px 44px rgba(14, 20, 34, 0.08));
+      transition: var(--transition-timing);
+
+      &:hover {
+        scale: 1.1;
+        box-shadow: var(--color-raspberry-button) 0px 1rem 2rem;
+      }
     }
 
-    .button:first-child {
+    .btn-left {
       background: url("../img/left-button-icon.svg");
+      margin-inline-end: 2rem;
     }
 
-    .button:last-child {
-      background: url("../img/right-button-icon.svg") center/cover;
+    .btn-right {
+      margin-inline-start: -0.31rem;
+      border: 2px solid var(--color-raspberry-button);
+      background: url("../img/right-button-icon.svg") no-repeat center;
+      background-color: var(--color-raspberry-button);
+    }
+
+    .bullets {
+      display: flex;
+      column-gap: 1.5rem;
+
+      .bullet {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: #dde0e4;
+        cursor: pointer;
+        transition: var(--transition-timing);
+
+        &:first-child {
+          width: 5rem;
+          border-radius: 1.5rem;
+          background-color: var(--color-raspberry-button);
+        }
+
+        &:hover {
+          scale: 1.1;
+          background: var(--color-darker-blue);
+        }
+      }
     }
   }
 }
