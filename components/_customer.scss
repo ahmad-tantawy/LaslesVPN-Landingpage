@@ -93,6 +93,35 @@
     width: 100%;
     margin-top: 6rem;
 
+    .bullets {
+      display: flex;
+      column-gap: 1.5rem;
+
+      .bullet {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: #dde0e4;
+        cursor: pointer;
+        transition: var(--transition-timing);
+
+        &:first-child {
+          width: 5rem;
+          border-radius: 1.5rem;
+          background-color: var(--color-raspberry-button);
+        }
+
+        &:hover {
+          scale: 1.1;
+          background: var(--color-darker-blue);
+        }
+      }
+    }
+
+    .btn-wrappper {
+      height: 6rem;
+    }
+
     .btn {
       display: inline-block;
       width: 60px;
@@ -118,31 +147,6 @@
       border: 2px solid var(--color-raspberry-button);
       background: url("../img/right-button-icon.svg") no-repeat center;
       background-color: var(--color-raspberry-button);
-    }
-
-    .bullets {
-      display: flex;
-      column-gap: 1.5rem;
-
-      .bullet {
-        width: 1.5rem;
-        height: 1.5rem;
-        border-radius: 50%;
-        background-color: #dde0e4;
-        cursor: pointer;
-        transition: var(--transition-timing);
-
-        &:first-child {
-          width: 5rem;
-          border-radius: 1.5rem;
-          background-color: var(--color-raspberry-button);
-        }
-
-        &:hover {
-          scale: 1.1;
-          background: var(--color-darker-blue);
-        }
-      }
     }
   }
 }
