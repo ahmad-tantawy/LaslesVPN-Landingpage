@@ -5,6 +5,8 @@
   margin-top: 6.502rem;
   border-radius: var(--default-radius);
   box-shadow: 0 2rem 6rem rgb(13, 16, 37, 0.09);
+  background-color: var(--color-white);
+  z-index: 2;
 
   &__heading {
     // question!! the same question all the time how can i adjust height with line height

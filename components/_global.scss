@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  // row-gap: 50px; /*noteeeeeeeeeeeeeeeeeeeeee*/
   max-width: var(--container-width);
   padding: 0 var(--default-padding);
   margin: 0 auto;
@@ -12,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // column-gap: 30px; /*noteeeeeeeeeeeeeeeeeeeeee*/
+  user-select: none;
 
   &__heading {
     font-size: 3.5rem;
