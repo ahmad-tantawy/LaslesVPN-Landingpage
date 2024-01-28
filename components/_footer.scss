@@ -6,7 +6,7 @@
   align-items: flex-start;
   padding-top: 6.35rem;
   z-index: 1;
-  background-color: #f8f8f8;
+  background-color: var(--color-before-background);
 
   &::before {
     content: "";
@@ -14,7 +14,7 @@
     top: -11.65rem;
     width: 100vw;
     height: 126%;
-    background-color: #f8f8f8;
+    background-color: var(--color-before-background);
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
@@ -54,7 +54,7 @@
     height: 33.6px;
     background-color: var(--color-white);
     border-radius: 50%;
-    box-shadow: 0 1px 5px #00000030;
+    box-shadow: 0 1px 5px var(--color-social-shadow);
     transition: var(--transition-timing);
 
     & > i {
@@ -85,7 +85,7 @@
   }
 
   &__copyright {
-    color: #afb5c0;
+    color: var(--color-copyright-text);
     margin-top: 3rem;
 
     &-text {

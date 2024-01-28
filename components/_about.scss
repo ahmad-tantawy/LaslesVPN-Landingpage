@@ -29,7 +29,7 @@
   &__button:hover {
     color: var(--color-white);
     background-color: var(--color-darker-blue);
-    box-shadow: 0 2rem 4rem rgba(11, 19, 42, 0.35);
+    box-shadow: 0 2rem 4rem var(--color-custom-shadow);
   }
 
   &__imgContent {

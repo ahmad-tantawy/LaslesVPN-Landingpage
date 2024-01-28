@@ -1,11 +1,23 @@
 .plans {
+  max-width: 100%;
   flex-direction: column;
   text-align: center;
-  background: linear-gradient(
-    180deg,
-    #f8f8f8 -45.04%,
-    rgba(248, 248, 248, 0) 88.56%
-  );
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      var(--color-before-background) -45.04%,
+      rgba(248, 248, 248, 0) 88.56%
+    );
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
 
   &__heading {
     margin: 8.027rem 8.508rem 2rem;
@@ -23,7 +35,7 @@
       position: relative;
       width: 33rem;
       height: 76rem;
-      border: 2px solid #ddd;
+      border: 2px solid var(--color-border);
       border-radius: var(--default-radius);
       background: var(--color-white);
 
@@ -59,7 +71,7 @@
         }
 
         .bottom-monthly-price {
-          color: #4f5665;
+          color: var(--color-text);
           font-weight: var(--font-weight-regular);
         }
       }

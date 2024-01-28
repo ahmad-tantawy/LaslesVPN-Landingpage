@@ -23,7 +23,7 @@
         height: 23rem;
         padding: 3rem;
         margin-right: 5rem;
-        border: 2px solid #ddd;
+        border: 2px solid var(--color-border);
         border-radius: var(--default-radius);
         transition: var(--transition-timing);
 
@@ -31,7 +31,6 @@
           display: flex;
           align-items: center;
           height: 5rem;
-          // border: 1px solid red;
         }
 
         &--img {
@@ -71,17 +70,18 @@
 
         .card--discription {
           margin-top: 0.7rem; // question: how can i make this value 2rem without change line-height value
-          color: #0b132a;
-        }
-
-        &:hover {
-          scale: 1.01;
-          border: 2px solid var(--color-raspberry-button);
+          color: var(--color-darker-blue);
         }
       }
 
       .card:first-child {
         border: 2px solid var(--color-raspberry-button);
+      }
+
+      .card:first-child:hover,
+      .card:hover {
+        scale: 1.01;
+        border: 2px solid var(--color-custom-shadow);
       }
     }
   }
@@ -101,7 +101,7 @@
         width: 1.5rem;
         height: 1.5rem;
         border-radius: 50%;
-        background-color: #dde0e4;
+        background-color: var(--color-bullet-background);
         cursor: pointer;
         transition: var(--transition-timing);
 
@@ -132,8 +132,7 @@
       transition: var(--transition-timing);
 
       &:hover {
-        scale: 1.1;
-        box-shadow: var(--color-raspberry-button) 0px 1rem 2rem;
+        scale: 1.11;
       }
     }
 

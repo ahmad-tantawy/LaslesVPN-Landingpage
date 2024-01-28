@@ -1,6 +1,5 @@
 :root {
   --container-width: 144rem; /* Updated */
-  --gutter: 1rem;
 
   --default-padding: 15rem;
   --default-radius: 1rem;
@@ -8,18 +7,20 @@
   --desktop-width: 900px;
   --tablet-width: 600px;
 
-  --color-black: #000;
   --color-white: #fff;
   --color-text: #4f5665; /* Updated */
+  --color-copyright-text: #afb6c0; /* Updated */
   --color-darker-blue: #0b132a; /* Updated */
   --color-raspberry-sorbet: #f53855; /* Updated */
   --color-raspberry-button: #f53838; /* Updated */
+  --color-raspberry-shadow: #f5383859; /* Updated */
+  --color-custom-shadow: #0b132a59; /* Updated */
+  --color-social-shadow: #00000030; /* Updated */
 
   --color-background: var(--color-white); /* Updated */
-  --color-box-img: var(--color-black);
-  --color-link-bg: var(--color-black);
-  --color-input-border: var(--color-black);
-  --color-footer-border: var(--color-black);
+  --color-before-background: #f8f8f8; /* Updated */
+  --color-bullet-background: #dde0e4; /* Updated */
+  --color-border: #ddd; /* Updated */
 
   --font-family-rubik: "Rubik", sans-serif;
   --line-height-main: 3rem;
