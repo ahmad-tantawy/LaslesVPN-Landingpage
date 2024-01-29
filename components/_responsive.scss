@@ -1,0 +1,107 @@
+@media (max-width: 1250px) {
+  .header .navigation__list,
+  .header .header__signs {
+    gap: 0.8rem;
+  }
+}
+
+// Tablet
+@media (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    padding: 0 var(--default-responsive-padding);
+  }
+
+  .section {
+    flex-direction: column;
+  }
+
+  /* header section*/
+  .header {
+    padding: 1.5rem 0;
+    font-size: var(--font-size-14);
+    background-color: var(--color-white);
+
+    .burger-menu {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      gap: 0.5rem;
+      cursor: pointer;
+    }
+
+    .burger-menu__bar {
+      width: 3rem;
+      height: 0.4rem;
+      background-color: var(--color-darker-blue);
+      transition: var(--transition-timing);
+      border-radius: var(--default-radius);
+    }
+
+    .navigation,
+    .header__signs {
+      position: absolute;
+      top: 0;
+      width: 100vw;
+      padding: 1.8rem 1rem;
+      border-bottom: 0.1rem solid var(--color-raspberry-button);
+      background-color: var(--color-darker-blue);
+      transition: var(--transition-timing);
+      z-index: -1;
+    }
+
+    .header__signs {
+      justify-content: flex-end;
+      color: var(--color-white);
+
+      &--in,
+      &--up {
+        color: inherit;
+      }
+
+      &--up {
+        width: 8rem;
+        height: 3rem;
+      }
+    }
+
+    &:has(.burger-menu__checkbox:checked) {
+      .burger-menu__bar {
+        &:nth-child(1) {
+          transform: translateY(10px) rotate(40deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+          visibility: hidden;
+        }
+        &:nth-child(3) {
+          transform: translateY(-4.5px) rotate(-40deg);
+        }
+      }
+
+      .navigation,
+      .header__signs {
+        position: absolute;
+        color: var(--color-white);
+        top: 6.9rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+
+      .header__signs {
+        justify-content: flex-end;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@media (max-width: 355px) {
+  .header .header__signs {
+    display: none;
+  }
+}

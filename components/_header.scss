@@ -1,5 +1,4 @@
 .header {
-  grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,5 +57,10 @@
       background-color: var(--color-raspberry-button);
       color: var(--color-white);
     }
+  }
+
+  .burger-menu__checkbox,
+  .burger-menu {
+    display: none;
   }
 }
