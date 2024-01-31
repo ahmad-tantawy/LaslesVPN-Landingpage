@@ -53,7 +53,7 @@
       position: absolute;
       top: 0;
       width: 100vw;
-      padding: 1.8rem 1rem;
+      padding: 1.8rem var(--default-responsive-padding);
       border-bottom: 0.1rem solid var(--color-raspberry-button);
       background-color: var(--color-darker-blue);
       transition: var(--transition-timing);
@@ -85,7 +85,7 @@
           visibility: hidden;
         }
         &:nth-child(3) {
-          transform: translateY(-4.5px) rotate(-40deg);
+          transform: translateY(-4px) rotate(-40deg);
         }
       }
 
@@ -93,7 +93,7 @@
       .header__signs {
         position: absolute;
         color: var(--color-white);
-        top: 6.9rem; // want to update
+        top: 8rem;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
@@ -108,10 +108,51 @@
 
   /* About section*/
   .about {
+    margin-top: 8.5rem;
+
     &__data {
       display: flex;
       flex-direction: column;
       flex: 1;
+    }
+
+    &__heading {
+      font-size: 4rem;
+      line-height: 4.75rem;
+
+      &--bold {
+        font-weight: var(--font-weight-semi-bold);
+      }
+    }
+
+    &__objective {
+      margin: 2rem 0;
+      line-height: calc(var(--line-height-main) / 1.4);
+
+      &--bold {
+        font-weight: var(--font-weight-medium);
+      }
+    }
+
+    &__imgContent {
+      height: auto;
+    }
+  }
+
+  // Numbers section
+  .numbers {
+    padding: 3.72rem 5rem;
+    margin-top: 7.3rem;
+  }
+
+  // Features section
+  .features {
+    &__imgContent {
+      padding: 0 2rem;
+    }
+
+    &__data {
+      padding-left: 2rem;
     }
   }
 
@@ -132,7 +173,6 @@
 }
 
 /* Mobile responsiveness implementation */
-
 @media (max-width: 680px) {
   html {
     font-size: 43.75%; // 7px
@@ -146,9 +186,23 @@
     flex-direction: column;
   }
 
+  // header
+  .header {
+    &:has(.burger-menu__checkbox:checked) {
+      .burger-menu__bar {
+        &:nth-child(1) {
+          transform: translateY(9px) rotate(40deg);
+        }
+        &:nth-child(3) {
+          transform: translateY(-4.2px) rotate(-40deg);
+        }
+      }
+    }
+  }
+
   // about
   .about {
-    margin-top: 3rem;
+    margin-top: 7rem;
     &__data {
       align-items: center;
     }
@@ -159,10 +213,6 @@
 
     .about__objective {
       margin: 2.125rem 0 4.125rem 0;
-    }
-
-    &__button {
-      align-items: center;
     }
 
     &__imgContent {
@@ -326,17 +376,46 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    column-gap: 2rem;
+    column-gap: 4rem;
     flex-wrap: wrap;
     row-gap: 5rem;
+    height: max-content;
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
+
+    &::before {
+      top: -21.5rem;
+    }
 
     &__content {
       order: 1;
       margin-inline-end: 0;
+
+      &-logo {
+        width: 100px;
+        height: 20px;
+
+        & > img {
+          width: 100%;
+        }
+      }
+
+      &-description {
+        line-height: 2rem;
+      }
     }
 
     &__social-media {
-      margin: 2rem 0;
+      margin: 1rem 0;
+    }
+
+    &__social-media-link {
+      width: 25px;
+      height: 25px;
+    }
+
+    &__social-media > a {
+      margin-inline-end: 1rem;
     }
 
     &__copyright {
@@ -358,26 +437,7 @@
   }
 }
 
-/* This media query addresses design issues as there is currently no mobile version and lacks a clear pattern across sections. */
-@media (max-width: 355px) {
-  .header .header__signs {
-    display: none;
-  }
-}
-
-@media (max-width: 500px) and (min-width: 300px) {
-  .footer::before {
-    height: 175%;
-  }
-
-  .footer__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
+/* NOTE: Next media queries addressed design issues because there is no mobile version and no clear pattern across sections in the overall design. */
 @media (min-width: 250px) and (max-width: 1139px) {
   .plans {
     &__cards--wrapper {
@@ -397,5 +457,47 @@
 
   .features__img {
     margin: 0;
+  }
+}
+
+/* Next two rules address background styling */
+@media (max-width: 680px) and (min-width: 515px) {
+  .footer::before {
+    height: 180%;
+  }
+}
+
+@media (max-width: 514px) {
+  .footer::before {
+    height: 135%;
+  }
+}
+
+/* Next rules for small device styling in the footer */
+@media (max-width: 482px) and (min-width: 250px) {
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Next rules for about button in small devices
+@media (max-width: 400px) {
+  .about .button {
+    width: 100%;
+  }
+}
+
+/* Hide header signs on devices <= 355px */
+@media (max-width: 326px) {
+  .header .header__signs {
+    display: none;
+  }
+
+  .header .navigation {
+    display: flex;
+    justify-content: center;
   }
 }
