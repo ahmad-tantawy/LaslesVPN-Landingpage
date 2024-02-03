@@ -13,8 +13,10 @@
     <title>LaslesVPN</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
+    <!-- Start Header Section -->
+    <header class="header">
+      <div class="container">
+        <!-- LogoContent -->
         <div class="logoContent">
           <img
             class="logoContent__logo"
@@ -23,7 +25,7 @@
           />
           <span>Lasles<span class="logoContent__text">VPN</span></span>
         </div>
-
+        <!-- Navigation -->
         <nav class="navigation">
           <ul class="navigation__list">
             <li>
@@ -43,22 +45,25 @@
             </li>
           </ul>
         </nav>
-
+        <!-- Header buttons -->
         <div class="header__signs">
           <a href="#" class="header__signs--in">Sign In</a>
           <a href="#" class="header__signs--up">Sign Up</a>
         </div>
-
+        <!-- Burger Menu -->
         <label for="menu" class="burger-menu">
           <div class="burger-menu__bar"></div>
           <div class="burger-menu__bar"></div>
           <div class="burger-menu__bar"></div>
         </label>
-
         <input id="menu" class="burger-menu__checkbox" type="checkbox" />
-      </header>
+      </div>
+    </header>
 
-      <section id="about" class="section about">
+    <!-- Start About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <!-- Bio Data -->
         <div class="about__data">
           <h1 class="section__heading about__heading">
             Want anything to be easy with
@@ -71,47 +76,61 @@
           </p>
           <button class="button about__button">Get Started</button>
         </div>
-
+        <!-- Bio Image -->
         <div class="about__imgContent">
           <img class="about__img" src="img/about__img.svg" alt="about image" />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="numbers" class="section numbers">
-        <div class="numbers__columns">
-          <img class="numbers__img" src="img/user-icon.svg" alt="user icon" />
-          <div>
-            <p class="bold">90+</p>
-            <p class="numbers__data">Users</p>
+    <!-- Start Numbers Section -->
+    <section id="numbers" class="section numbers">
+      <div class="container">
+        <div class="numbers__wrapper">
+          <!-- Numbers Column -->
+          <div class="numbers__columns">
+            <img
+              class="numbers__columns--img"
+              src="img/user-icon.svg"
+              alt="user icon"
+            />
+            <div>
+              <p class="numbers__columns--value">90+</p>
+              <p class="numbers__columns--label">Users</p>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <!-- Numbers Column -->
+          <div class="numbers__columns">
+            <img
+              class="numbers__columns--img"
+              src="img/location-icon.svg"
+              alt="location icon"
+            />
+            <div>
+              <p class="numbers__columns--value">30+</p>
+              <p class="numbers__columns--label">Locations</p>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <!-- Numbers Column -->
+          <div class="numbers__columns">
+            <img
+              class="numbers__columns--img"
+              src="img/server-icon.svg"
+              alt="server icon"
+            />
+            <div>
+              <p class="numbers__columns--value">50+</p>
+              <p class="numbers__columns--label">Servers</p>
+            </div>
           </div>
         </div>
-        <div class="separator"></div>
-        <div class="numbers__columns">
-          <img
-            class="numbers__img"
-            src="img/location-icon.svg"
-            alt="location icon"
-          />
-          <div>
-            <p class="bold">30+</p>
-            <p class="numbers__data">Locations</p>
-          </div>
-        </div>
-        <div class="separator"></div>
-        <div class="numbers__columns">
-          <img
-            class="numbers__img"
-            src="img/server-icon.svg"
-            alt="server icon"
-          />
-          <div>
-            <p class="bold">50+</p>
-            <p class="numbers__data">Servers</p>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="features" class="section features">
+    <section id="features" class="section features">
+      <div class="container">
         <div class="features__imgContent">
           <img
             class="features__img"
@@ -136,9 +155,11 @@
             <li>No specific time limits.</li>
           </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="plans" class="section plans">
+    <section id="plans" class="section plans">
+      <div class="container">
         <h2 class="section__heading plans__heading">Choose Your Plan</h2>
         <p class="plans__objective">
           Let's choose the package that is best for you and explore it happily
@@ -224,9 +245,11 @@
             </div>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="network" class="section network">
+    <section id="network" class="section network">
+      <div class="container">
         <h2 class="section__heading">
           Huge Global Network <br />
           of Fast VPN
@@ -254,9 +277,11 @@
             <img src="./img/spotify-img.svg" alt="spotify image" />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="customer" class="section customer">
+    <section id="customer" class="section customer">
+      <div class="container">
         <div>
           <h2 class="section__heading">
             Trusted by Thousands of <br />
@@ -345,9 +370,11 @@
             <div class="btn btn-right"></div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="subscribe" class="section subscribe">
+    <section id="subscribe" class="section subscribe">
+      <div class="container">
         <div>
           <h2 class="section__heading subscribe__heading">
             Subscribe Now for <br />Get Special Features!
@@ -360,9 +387,11 @@
         <div>
           <button class="button subscribe__button">Subscribe Now</button>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <footer id="footer" class="footer section">
+    <footer id="footer" class="footer section">
+      <div class="container">
         <div class="footer__content">
           <div class="footer__content-logo">
             <img src="./img/logo-svg.svg" alt="logo image" />
@@ -438,7 +467,7 @@
             </li>
           </ul>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,6 +1,5 @@
 .about {
   margin-top: 8.849rem;
-  max-width: 100%;
 
   &__data {
     display: flex;
@@ -11,7 +10,6 @@
   &__heading {
     font-size: 5rem;
     line-height: 7rem;
-
     &--bold {
       font-weight: var(--font-weight-bold);
     }
@@ -19,7 +17,6 @@
 
   &__objective {
     margin: 2rem 0 5rem 0;
-
     &--bold {
       font-weight: var(--font-weight-medium);
     }
@@ -35,7 +32,6 @@
     flex: 1;
     width: 61.124rem;
     height: 38.244rem;
-
     .about__img {
       position: absolute;
       max-width: 100%;

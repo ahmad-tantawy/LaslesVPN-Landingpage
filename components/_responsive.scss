@@ -29,8 +29,8 @@
   /* header section*/
   .header {
     padding: 2rem 0;
+    border-bottom: 0.01rem solid var(--color-darker-blue);
     font-size: var(--font-size-14);
-    background-color: var(--color-white);
 
     .burger-menu {
       display: flex;
@@ -52,24 +52,25 @@
     .header__signs {
       position: absolute;
       top: 0;
-      width: 100vw;
-      padding: 1.8rem var(--default-responsive-padding);
+      width: 100%;
+      padding: 1.2rem var(--default-responsive-padding);
       border-bottom: 0.1rem solid var(--color-raspberry-button);
       background-color: var(--color-darker-blue);
       transition: var(--transition-timing);
+      left: 50%;
+      transform: translateX(-50%);
       z-index: -1;
+      opacity: 0;
     }
 
     .header__signs {
       justify-content: flex-end;
       color: var(--color-white);
       border: 0;
-
       &--in,
       &--up {
         color: inherit;
       }
-
       &--up {
         padding: 0 1.45rem;
       }
@@ -93,14 +94,15 @@
       .header__signs {
         position: absolute;
         color: var(--color-white);
-        top: 8rem;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
+        top: 7.6rem;
+        opacity: 1;
       }
 
       .header__signs {
+        // These are the rules for links to work properly
         background-color: transparent;
+        width: 40%;
+        transform: translateX(24.3%);
       }
     }
   }
@@ -118,7 +120,6 @@
     &__heading {
       font-size: 4rem;
       line-height: 4.75rem;
-
       &--bold {
         font-weight: var(--font-weight-semi-bold);
       }
@@ -127,7 +128,6 @@
     &__objective {
       margin: 2rem 0;
       line-height: calc(var(--line-height-main) / 1.4);
-
       &--bold {
         font-weight: var(--font-weight-medium);
       }
@@ -140,8 +140,12 @@
 
   // Numbers section
   .numbers {
-    padding: 3.72rem 5rem;
     margin-top: 7.3rem;
+    .container {
+      .numbers__wrapper {
+        padding: 3.72rem 5rem;
+      }
+    }
   }
 
   // Features section
@@ -177,16 +181,20 @@
     font-size: 43.75%;
   }
 
-  .container {
+  .section {
     text-align: center;
   }
 
-  .section {
+  .container {
     flex-direction: column;
   }
 
   // header
   .header {
+    .container {
+      flex-direction: row;
+    }
+
     &:has(.burger-menu__checkbox:checked) {
       .burger-menu__bar {
         &:nth-child(1) {
@@ -202,6 +210,7 @@
   // about
   .about {
     margin-top: 7rem;
+
     &__data {
       align-items: center;
     }
@@ -223,37 +232,37 @@
 
   // numbers
   .numbers {
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 90%;
-    height: 10rem;
-    padding: 1.5rem 2rem;
-    margin: 4rem auto;
-    text-align: left;
-    justify-content: space-around;
-
-    &__columns {
-      line-height: normal;
-    }
-
-    .separator {
-      width: 0.567px;
-      height: 22.683px;
-    }
-
-    &__img {
-      margin-right: 1.5rem;
-      width: 3.3rem;
-      height: 3.3rem;
-    }
-
-    &__data {
-      font-size: 1.5rem;
-    }
-
-    .bold {
-      font-size: 1.8rem;
-      font-weight: var(--font-weight-medium);
+    .container {
+      .numbers__wrapper {
+        height: 10rem;
+        max-width: 90%;
+        padding: 1.5rem 2rem;
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-around;
+        align-items: center;
+        overflow-x: auto;
+        gap: 0.5rem;
+        .numbers__columns {
+          line-height: normal;
+          &--img {
+            margin-right: 1.5rem;
+            width: 3.3rem;
+            height: 3.3rem;
+          }
+          &--label {
+            font-size: 1.5rem;
+          }
+          &--value {
+            font-size: 1.8rem;
+            font-weight: var(--font-weight-medium);
+          }
+        }
+        .separator {
+          width: 0.567px;
+          height: 22.683px;
+        }
+      }
     }
   }
 
@@ -447,7 +456,7 @@
   }
 }
 
-@media (min-width: 250px) and (max-width: 1439px) {
+@media (min-width: 250px) and (max-width: 1380px) {
   .about {
     .about__img {
       position: relative;
