@@ -232,7 +232,9 @@
 
   // numbers
   .numbers {
+    margin-top: 1;
     .container {
+      margin: 4rem auto 0;
       .numbers__wrapper {
         height: 10rem;
         max-width: 90%;
@@ -268,7 +270,7 @@
 
   // features
   .features {
-    margin: 4rem 0;
+    margin-top: 8rem;
     align-items: center;
 
     &__imgContent {
@@ -285,10 +287,9 @@
 
     &__list {
       text-align: left;
-    }
-
-    &__list > li::before {
-      top: 1.25rem;
+      li::before {
+        top: 1.25rem;
+      }
     }
   }
 
