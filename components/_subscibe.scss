@@ -1,35 +1,39 @@
 .subscribe {
-  width: 100%;
-  height: 23.3rem;
-  padding: 5.85rem 7rem;
   margin-top: 6.502rem;
-  border-radius: var(--default-radius);
-  box-shadow: 0 2rem 6rem rgb(13, 16, 37, 0.09);
-  background-color: var(--color-white);
-  z-index: 2;
-
-  &__heading {
-    // question!! the same question all the time how can i adjust height with line height
-    height: 80px;
-    line-height: 45px;
-    margin-top: -12px;
-  }
-
-  &__objective {
-    // question!! the same question all the time how can i adjust height with line height
-    margin-top: 2rem;
-    height: 16px;
-  }
-
-  &__button {
-    font-weight: 700;
-    line-height: 25px;
-    color: var(--color-white);
-
-    &:hover {
-      color: var(--color-white);
-      background-color: var(--color-darker-blue);
-      box-shadow: 0 2rem 4rem var(--color-custom-shadow);
+  background: linear-gradient(
+    var(--color-white) 50%,
+    var(--color-before-background) 0%
+  );
+  .container {
+    .subscribe__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 23.3rem;
+      padding: 5.85rem 7rem;
+      border-radius: var(--default-radius);
+      box-shadow: 0 2rem 6rem rgb(13, 16, 37, 0.09);
+      background-color: var(--color-white);
+      .subscribe__heading {
+        height: 80px;
+        line-height: 45px;
+        margin-top: -12px;
+      }
+      .subscribe__objective {
+        margin-top: 2rem;
+        height: 16px;
+      }
+      .subscribe__button {
+        font-weight: 700;
+        line-height: 25px;
+        color: var(--color-white);
+        &:hover {
+          color: var(--color-white);
+          background-color: var(--color-darker-blue);
+          box-shadow: 0 2rem 4rem var(--color-custom-shadow);
+        }
+      }
     }
   }
 }

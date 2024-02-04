@@ -5,21 +5,17 @@
     flex: 1;
     max-width: 50.812rem;
   }
-
   &__img {
     max-width: 100%;
     margin: 0 0 0.446rem 3.452rem;
   }
-
   &__data {
     flex: 1;
     max-width: 42.788rem;
   }
-
   &__objective {
     margin: 2rem 0;
   }
-
   &__list > li::before {
     content: url("../img/features-icon.svg");
     position: relative;

@@ -1,103 +1,85 @@
 .plans {
-  max-width: 100%;
-  flex-direction: column;
-  text-align: center;
-  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    var(--color-before-background) -45.04%,
+    rgba(248, 248, 248, 0) 88.56%
+  );
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 80vh;
-    background: linear-gradient(
-      180deg,
-      var(--color-before-background) -45.04%,
-      rgba(248, 248, 248, 0) 88.56%
-    );
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-  }
+  .container {
+    flex-direction: column;
+    text-align: center;
 
-  &__heading {
-    margin: 8.027rem 8.508rem 2rem;
-  }
-
-  &__objective {
-    margin-bottom: 6rem;
-  }
-
-  &__cards--wrapper {
-    display: flex;
-    gap: 5rem;
-
-    .card {
-      position: relative;
-      width: 33rem;
-      height: 76rem;
-      border: 2px solid var(--color-border);
-      border-radius: var(--default-radius);
-      background: var(--color-white);
-
-      &-image {
-        margin-top: 7.963rem;
-        width: 14.4904rem;
-        height: 16.5374rem;
-      }
-
-      &-features {
-        text-align: left;
-        margin-left: 6.991rem;
-        font-size: 1.4rem;
-      }
-
-      &-features ul > li::before {
-        content: url("../img/plan-icon.svg");
-        position: relative;
-        margin-right: 2rem;
-        top: 0.7rem;
-      }
-
-      &-bottom {
-        position: absolute;
-        width: 100%;
-        bottom: 5rem;
-
-        .bottom-price {
-          margin-bottom: 2rem;
-          color: var(--color-darker-blue);
-          font-size: var(--font-size-25);
-          font-weight: var(--font-weight-medium);
-        }
-
-        .bottom-monthly-price {
-          color: var(--color-text);
-          font-weight: var(--font-weight-regular);
-        }
-      }
-
-      &--button {
-        border: 2px solid var(--color-raspberry-button);
-        border-radius: 5rem;
-        padding: 0.55rem 6.35rem;
-      }
-
-      .featured-button {
-        color: var(--color-white);
-        background-color: var(--color-raspberry-button);
-        box-shadow: 0 2rem 4rem rgba(245, 56, 56, 0.35);
-      }
-
-      &--button:hover {
-        border-color: var(--color-darker-blue);
-        color: var(--color-white);
-        background-color: var(--color-darker-blue);
-        box-shadow: 0 2rem 4rem rgba(11, 19, 42, 0.35);
-      }
+    .plans__heading {
+      margin: 8.027rem 8.508rem 2rem;
     }
+    .plans__objective {
+      margin-bottom: 6rem;
+    }
+    .plans__cards--wrapper {
+      display: flex;
+      gap: 5rem;
+      .card {
+        position: relative;
+        width: 33rem;
+        height: 76rem;
+        border: 2px solid var(--color-border);
+        border-radius: var(--default-radius);
+        background: var(--color-white);
+        &-image {
+          margin-top: 7.963rem;
+          width: 14.4904rem;
+          height: 16.5374rem;
+        }
+        &-features {
+          text-align: left;
+          margin-left: 6.991rem;
+          font-size: 1.4rem;
+        }
+        &-features ul > li::before {
+          content: url("../img/plan-icon.svg");
+          position: relative;
+          margin-right: 2rem;
+          top: 0.7rem;
+        }
+        &-bottom {
+          position: absolute;
+          width: 100%;
+          bottom: 5rem;
+          .bottom-price {
+            margin-bottom: 2rem;
+            color: var(--color-darker-blue);
+            font-size: var(--font-size-25);
+            font-weight: var(--font-weight-medium);
+          }
+          .bottom-monthly-price {
+            color: var(--color-text);
+            font-weight: var(--font-weight-regular);
+          }
+        }
+        &--button {
+          border: 2px solid var(--color-raspberry-button);
+          border-radius: 5rem;
+          padding: 0.55rem 6.35rem;
+        }
+        .featured-button {
+          color: var(--color-white);
+          background-color: var(--color-raspberry-button);
+          box-shadow: 0 2rem 4rem rgba(245, 56, 56, 0.35);
+        }
+        &--button:hover {
+          border-color: var(--color-darker-blue);
+          color: var(--color-white);
+          background-color: var(--color-darker-blue);
+          box-shadow: 0 2rem 4rem rgba(11, 19, 42, 0.35);
+        }
 
-    .card:nth-child(3) {
-      border: 2px solid var(--color-raspberry-button);
+        &:hover {
+          border: 2px solid var(--color-raspberry-button);
+        }
+      }
+      .card:nth-child(3) {
+        border: 2px solid var(--color-raspberry-button);
+      }
     }
   }
 }

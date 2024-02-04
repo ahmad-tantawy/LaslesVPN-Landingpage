@@ -8,18 +8,6 @@
   z-index: 1;
   background-color: var(--color-before-background);
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -11.65rem;
-    width: 100vw;
-    height: 126%;
-    background-color: var(--color-before-background);
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-  }
-
   &__content {
     margin-inline-end: 23rem;
   }
