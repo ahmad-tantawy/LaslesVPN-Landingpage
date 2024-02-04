@@ -26,4 +26,4 @@ If you have any suggestions or find any bugs, please feel free to create a pull 
 
 ## Design Preview
 
-![Design Preview](img/design-preview.jpg)
+![Design Preview](img/design-preview.jpeg)
