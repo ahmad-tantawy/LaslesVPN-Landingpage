@@ -1,12 +1,10 @@
 .about {
   margin-top: 8.849rem;
-
   &__data {
     display: flex;
     flex-direction: column;
     flex: 1;
   }
-
   &__heading {
     font-size: 5rem;
     line-height: 7rem;
@@ -14,20 +12,17 @@
       font-weight: var(--font-weight-bold);
     }
   }
-
   &__objective {
     margin: 2rem 0 5rem 0;
     &--bold {
       font-weight: var(--font-weight-medium);
     }
   }
-
   &__button:hover {
     color: var(--color-white);
     background-color: var(--color-darker-blue);
     box-shadow: 0 2rem 4rem var(--color-custom-shadow);
   }
-
   &__imgContent {
     flex: 1;
     width: 61.124rem;

@@ -4,11 +4,9 @@
     var(--color-before-background) -45.04%,
     rgba(248, 248, 248, 0) 88.56%
   );
-
   .container {
     flex-direction: column;
     text-align: center;
-
     .plans__heading {
       margin: 8.027rem 8.508rem 2rem;
     }
@@ -25,6 +23,7 @@
         border: 2px solid var(--color-border);
         border-radius: var(--default-radius);
         background: var(--color-white);
+        transition: var(--transition-timing);
         &-image {
           margin-top: 7.963rem;
           width: 14.4904rem;
@@ -60,6 +59,7 @@
           border: 2px solid var(--color-raspberry-button);
           border-radius: 5rem;
           padding: 0.55rem 6.35rem;
+          transition: var(--transition-timing);
         }
         .featured-button {
           color: var(--color-white);

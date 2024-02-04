@@ -1,36 +1,29 @@
 :root {
-  --container-width: 144rem; /* Updated */
-
+  --container-width: 144rem;
   --default-padding: 15rem;
   --default-responsive-padding: 2rem;
   --default-radius: 1rem;
-
   --desktop-width: 900px;
   --tablet-width: 600px;
-
   --color-white: #fff;
-  --color-text: #4f5665; /* Updated */
-  --color-copyright-text: #afb6c0; /* Updated */
-  --color-darker-blue: #0b132a; /* Updated */
-  --color-raspberry-sorbet: #f53855; /* Updated */
-  --color-raspberry-button: #f53838; /* Updated */
-  --color-raspberry-shadow: #f5383859; /* Updated */
-  --color-custom-shadow: #0b132a59; /* Updated */
-  --color-social-shadow: #00000030; /* Updated */
-
-  --color-background: var(--color-white); /* Updated */
-  --color-before-background: #f8f8f8; /* Updated */
-  --color-bullet-background: #dde0e4; /* Updated */
-  --color-border: #ddd; /* Updated */
-
+  --color-text: #4f5665;
+  --color-copyright-text: #afb6c0;
+  --color-darker-blue: #0b132a;
+  --color-raspberry-sorbet: #f53855;
+  --color-raspberry-button: #f53838;
+  --color-raspberry-shadow: #f5383859;
+  --color-custom-shadow: #0b132a59;
+  --color-social-shadow: #00000030;
+  --color-background: var(--color-white);
+  --color-before-background: #f8f8f8;
+  --color-bullet-background: #dde0e4;
+  --color-border: #ddd;
   --font-family-rubik: "Rubik", sans-serif;
   --line-height-main: 3rem;
-
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
-
   --font-size-70: 7rem;
   --font-size-65: 6.5rem;
   --font-size-40: 4rem;
@@ -41,6 +34,5 @@
   --font-size-18: 1.8rem;
   --font-size-15: 1.5rem;
   --font-size-14: 1.4rem;
-
   --transition-timing: 0.4s;
 }
